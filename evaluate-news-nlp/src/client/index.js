@@ -17,4 +17,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
 
 const test1 = { t: false }
 
-modules.export = test1
+module.export = test1
+module.export = checkForName
+module.export = handleSubmit
+module.export = getText
