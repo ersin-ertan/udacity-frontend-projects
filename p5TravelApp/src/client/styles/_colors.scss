@@ -1,0 +1,23 @@
+$color-primary: #ead4f4;
+$color-secondary: #f7d2f0;
+$color-tertiary: #d3dfff;
+$color-accent-0: #e0faf3;
+$color-accent-1: #fcf8e5;
+$color-accent-1a: #f1eedc;
+$color-accent-1b: #e4e0d0;
+
+$color-font-primary:#000000;
+$color-font-secondary:#808080;
+
+.actionable {
+    background-color: $color-accent-1;
+    opacity: 0.80;
+
+    &:hover{
+        background-color:$color-accent-1a;
+    }
+    &:active{
+        background-color:$color-accent-1b;
+    }
+
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Travel App</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Tangerine:wght@700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" hack="dist/main.css">
+</head>
+
+<!-- 
+    Form { enter location traveling to, date leaving },
+    if date is within week, get current weather forcast, if future get predicted via
+    weatherbit api, which uses coordinates, get place name by coordinates via
+    geonames api, then display an image of the location via
+    pixabay
+ _______________
+|     Title     |
+| Start | End   |
+|    Location   |
+|     Image     |
+|_______________|
+-->
+
+<body>
+    <div id="app" class="flexbox debug">
+        <h1 id="title" class="debug">Travel App</h1>
+        <div id="dates" class="debug">
+            <label id="label-start" class="date-label" for="date-start">Start:</label>
+            <input id="date-start" class="date actionable" type="date""></input>
+            <label id=" label-end" class="date-label" for="date-end">End:</label>
+            <input id="date-end" class="date actionable" type="date"></input>
+            <div id="trip-length">Length:</div>
+        </div>
+        <input id="location" class="debug actionable" type="text" placeholder="Location..."></input>
+    </div>
+    <figure>
+        <img id="image-location" class="debug" alt="Location image"
+            src="https://cdn4.iconfinder.com/data/icons/documents-letters-and-stationery/400/doc-14-512.png">
+        <figcaption id="figcap">---</figcaption>
+    </figure>
+    <button id="toTop" class="actionable" type="button">To top</button>
+
+    <script>
+        // Check that service workers are supported
+        if ('serviceWorker' in navigator) {
+            // Use the window load event to keep the page load performant
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('dist/service-worker.js');
+            });
+        }
+    </script>
+</body>
+
+</html>

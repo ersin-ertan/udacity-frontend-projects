@@ -1,0 +1,45 @@
+@import '_colors';
+@import '_fonts';
+@import '_sizes';
+@import '_flex';
+
+
+
+@media (max-width: $size-small-px) {
+    body{
+        background: $color-primary;
+    }
+}
+@media (min-width: $size-small-px) and (max-width: $size-large-px) {
+    body{
+        background: $color-secondary;
+    }
+}
+@media (min-width: $size-large-px) {
+    body{
+        background: $color-tertiary;
+    }
+}
+
+#figcap{
+    text-align:center;
+}
+
+#location {
+    text-align: center;
+}
+
+.date {
+    text-align: center;
+}
+
+#image-location {
+    border:10px $color-accent-0 groove;
+    opacity: 0.90;
+}
+
+#toTop { 
+    margin-top: 10px;
+    margin-bottom: 5px;
+    width: 100%;
+}
