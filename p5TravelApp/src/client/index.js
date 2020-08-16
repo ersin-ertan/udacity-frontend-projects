@@ -16,6 +16,8 @@ window.addEventListener('DOMContentLoaded', (event) => {
                 const start = document.getElementById("date-start").value
                 const end = document.getElementById("date-end").value
                 searchForLocation(loc.trim(), start, end)
+            } else {
+                alert("Try populating the 'Location' input field before you press enter")
             }
             return false
         }
