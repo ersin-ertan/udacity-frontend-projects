@@ -5,7 +5,7 @@ const bodyParser = require("body-parser")
 const Geonames = require('geonames.js')
 const cors = require("cors")
 const fetch = require('node-fetch');
-const API = require("API")
+const API = require("./api")
 
 const pixApi = new API("pixabay", "https://pixabay.com/api/")
 
