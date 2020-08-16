@@ -1,12 +1,14 @@
-// import "../styles/styles.scss"
-// import { Something } from "./something"
-
+// smooth scroll to top on press
 export function toTop() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
     console.log("scrolling to top")
 }
 
+
+// Initializes date pickers to work from the present and onward
+// It will not allow selecting an end date earlier than a start date 
 export function initDatePickers(dateStart, dateEnd) {
+
 
     const date = new Date().toISOString()
     const today = date.split("T")[0];
@@ -47,6 +49,7 @@ export function initDatePickers(dateStart, dateEnd) {
     }
 }
 
+// Calculates the lengthe of the trip using the start and end date
 function calcLength(dateStart, dateEnd) {
     const s = dateStart.split("-")
     const e = dateEnd.split("-")

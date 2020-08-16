@@ -15,7 +15,10 @@ window.addEventListener('DOMContentLoaded', (event) => {
             if (loc.trim() != "") {
                 const start = document.getElementById("date-start").value
                 const end = document.getElementById("date-end").value
-                searchForLocation(loc.trim(), start, end)
+                // ensure location does not have whitespaces
+                if (searchForLocation(loc.trim(), start, end) == false) {
+                    alert("Something is wrong with the input location")
+                }
             } else {
                 alert("Try populating the 'Location' input field before you press enter")
             }

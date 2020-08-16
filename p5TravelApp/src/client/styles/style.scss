@@ -3,23 +3,81 @@
 @import '_sizes';
 @import '_flex';
 
+// @media screen and (min-width: 600px){
+//     body{
+//         background: $color-primary;
+//     }
+
+//     body * {
+//         font-family: Arial, Helvetica, sans-serif;
+//         font-size: 200%;
+//     }
+// }
+
+@media only screen and (max-width:$size-med-px)  { 
+    body{background: $color-secondary;
+    }
+
+    #label-location {
+        font-size: 0.75em;
+        text-align: center;
+    }
+
+    #date-start {
+        display: block;
+    }
+    
+    #date-end {
+        display: block;
+    }
+
+    #label-start {
+        margin-top: 3px;
+        display: block;
+        font-size: 200%;
+    }
+
+    #label-end {
+        margin-top: 3px;
+        display: block;
+        font-size: 1em;
+    }
+
+    #trip-length {
+        margin-top: 10px;
+        display: block;
+        font-size: 50%;
+    }
 
 
-@media (max-width: $size-small-px) {
-    body{
-        background: $color-primary;
+    #toTop { 
+        height: 100px;
+        width: 100%;
+        font-size: 3em;
     }
 }
-@media (min-width: $size-small-px) and (max-width: $size-large-px) {
-    body{
-        background: $color-secondary;
-    }
-}
-@media (min-width: $size-large-px) {
+@media only screen and (min-width:$size-med-px) and (max-width:$size-large-px)  { 
     body{
         background: $color-tertiary;
     }
+    body > * {
+        font-size: 2em;
+    }
 }
+@media only screen and (min-width:$size-large-px)  { 
+    body{ 
+        background: $color-accent-0;
+    }
+
+    body > * {
+        font-size: 3em;
+    }
+}
+
+#trip-length {
+    text-align: center;
+}
+
 
 #figcap{
     text-align:center;

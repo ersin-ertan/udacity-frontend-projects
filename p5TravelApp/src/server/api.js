@@ -1,3 +1,5 @@
+// API class that allows for dynamic API selection and an easier API interface for clean code
+
 module.exports = class API {
 
     constructor(name, baseUrl) {

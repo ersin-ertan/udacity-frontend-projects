@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Travel App</title>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Tangerine:wght@700&display=swap"
         rel="stylesheet">
@@ -27,13 +28,18 @@
     <div id="app" class="flexbox debug">
         <h1 id="title" class="debug">Travel App</h1>
         <div id="dates" class="debug">
-            <label id="label-start" class="date-label" for="date-start">Start:</label>
+            <span id="label-start" class="date-label" for="date-start">Start:</label>
             <input id="date-start" class="date actionable" type="date""></input>
-            <label id=" label-end" class="date-label" for="date-end">End:</label>
+            <span id="label-end" class="date-label" for="date-end">End:</label>
             <input id="date-end" class="date actionable" type="date"></input>
             <div id="trip-length">Length:</div>
         </div>
-        <input id="location" class="debug actionable" type="text" placeholder="Location..."></input>
+        <input id="location" class="debug actionable tooltiptext tooltip"
+            title="Press the enter button while the above 'Location' field is active to submit a request" type="text"
+            placeholder="Location..."></input>
+        <label id="label-location" for="location"
+            title="Press the enter button while the above 'Location' field is active to submit a request">Press the
+            enter button while the above 'Location' field is active to submit a request</label>
     </div>
     <figure>
         <img id="image-location" class="debug" alt="Location image"
