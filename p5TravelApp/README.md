@@ -1,5 +1,7 @@
 # P4 Travel App - FEND Capstone
 
+![Client Screenshot][Screen Shot 2020-08-17 at 10.21.28 AM.png]
+
 ## Overview
 - This project consolidates all of the past projects and lessons.
 
